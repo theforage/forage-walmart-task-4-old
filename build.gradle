@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+group 'com.walmart.forage'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.8.11.2'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.5'
+    implementation group: 'io.javalin', name: 'javalin', version: '3.13.11'
+}
+
+application {
+    mainClass = 'Main'
+}
